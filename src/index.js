@@ -1,9 +1,21 @@
-import React, {Component} from 'react'
+import React, { Component, Fragment, Children, cloneElement } from 'react';
 
-export default class extends Component {
+class Flux extends Component {
   render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
+    const { children, ...rest } = this.props;
+
+    return (
+      <Fragment>
+        {Children.map(children, child =>
+          cloneElement(child, {
+            ...rest,
+            ...this.state,
+            flux: state => this.setState({ ...state }),
+          }),
+        )}
+      </Fragment>
+    );
   }
 }
+
+export default Flux;

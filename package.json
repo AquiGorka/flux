@@ -1,7 +1,7 @@
 {
   "name": "flux",
   "version": "1.0.0",
-  "description": "flux React component",
+  "description": "Flux React component",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -27,7 +27,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
-  "author": "",
+  "author": "Gorka",
   "homepage": "",
   "license": "MIT",
   "repository": "",
