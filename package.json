@@ -1,5 +1,5 @@
 {
-  "name": "flux",
+  "name": "@aquigorka/flux",
   "version": "1.0.0",
   "description": "Flux React component",
   "main": "lib/index.js",
